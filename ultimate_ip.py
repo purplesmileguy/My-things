@@ -1,4 +1,5 @@
 import socket
+import time
 
 def get_ip_address():
     try:
@@ -15,6 +16,7 @@ if __name__ == "__main__":
     ip_address = get_ip_address()
     
     if ip_address:
-        print(f"IP-адрес вашего компьютера: {ip_address}")
+        print(f"IP-адрес цели: {ip_address}")
+        time.sleep(666)
     else:
         print("Не удалось получить IP-адрес.")
